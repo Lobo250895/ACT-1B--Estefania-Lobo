@@ -1,0 +1,268 @@
+html{
+    scroll-behavior: smooth;
+}
+
+.fila{
+    background-color: #f0e2e1;
+    padding: 3px;
+}
+.fila-fondo{
+    background-color:#f2eef5;
+}
+
+
+h3 {
+    text-align: center;
+    margin-top: 120px;
+}
+
+body {
+    text-align: center;
+    font-family: 'Merriweather Sans', sans-serif;
+    margin: 0;
+ }
+p{
+    background-color: #decedf;
+}
+
+body, 
+section {
+padding-top: 84px;
+background-color: #f2eef5;
+text-align: center;
+font-family: 'Merriweather Sans', sans-serif;
+}
+.fondo-portada{
+    background-image: 
+    linear-gradient(rgba(48, 138, 180, 0.85), rgba(0, 0, 0, 0.95)),
+   url(imagenes/Estatua\ Mariano\ Moreno\ 3.jpg );
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    margin-top: 0;
+}
+
+.fondo{
+    background-color: #f6efef;
+    padding: 3px;
+    
+}
+
+h1 {
+    color: #0b1314;
+    font-size: 50px;
+    font-family: 'Roboto', sans-serif;
+    text-align:center;
+    text-shadow: 0 0 5px rgb(23, 146, 228), 0 0 15px #00b7ff, 0 0 20px #0044ff, 0 0 40px #0044ff, 0 0 60px #3eaeca, 0 0 10px #506fc4, 0 0 98px #0c2168 ;
+    animation: blink 12f infinite;
+    -webkit-animation: blink 12f infinite;
+  }
+  .portada {
+    width:900px;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+}
+
+#Menu{
+    font-size: 20px;
+    font-family: cursive;
+    position: fixed;
+    left:0;
+    top:0;
+    right:0;
+    background-color: #129ae9;
+    padding:8px;
+    display: flex;
+    justify-content:space-between ;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    }
+
+    
+#Menu ul {
+    display: flex;
+    list-style-type: none;
+    padding-left:0;
+    margin-top:0;
+    bottom:0;
+}
+ #Menu li {
+    margin-left:20px;
+}
+.boton{
+    background-color: #4fc4cf;
+    color: #221c10;
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+.boton:hover{
+    background-color: #4ec0cf;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+
+
+.columna {
+    float: left;
+    width: 33.33%;
+    padding: 15px;
+    border-radius: 8px;
+    background-image: url(imagenes/fondo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@media screen and (max-width:600px) {
+    .column {
+      width: 100%;
+    }
+}
+
+.marco{
+    border: 3px solid rgb(207, 140, 140);
+ } 
+div.galeria {
+    border: 1px solid #ccc;
+    float: left;
+    width: 180px;
+    display: flex ;
+    flex-wrap: wrap;
+    width:1024px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color:aquamarine;
+}
+      
+div.galeria:hover {
+    border: 1px solid #777;
+}
+      
+div.galeria img {
+    width: 100%;
+    height: auto;
+}
+.texto-destacado {
+    text-transform: uppercase;
+    text-align: center;
+}
+.fuente-destacada{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #ffd803
+    font-family'Roboto', sans-serif;
+}
+
+
+#formulario {
+    width: 430px;
+    border: 2px solid black;
+    padding: 10px;
+
+}
+
+#formulario label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+#formulario input, #formulario textarea {
+    display: block;
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid #8bd3dd;
+    padding: 5px;
+
+}
+
+#formulario textarea {
+    resize: none;
+    margin-bottom: 10px;
+    font-family: inherit;
+
+}
+
+#formulario input:focus:invalid{
+    background-color: #4764b4;
+}
+
+#formulario input:focus:valid{
+    background-color: rgb(55, 143, 55);
+}
+
+body {
+
+   background-color: #f8f5f2;
+   color: #0a0e11;
+   text-align: center;
+   font-family: 'Merriweather Sans', sans-serif;
+
+}
+
+*{
+    box-sizing: border-box;
+}
+
+#formulario input[type=submit]{
+    background-color: #8622d8;
+    border: none;
+    padding: 10px;
+    text-transform: uppercase;
+}
+
+#formulario input[type=checkbox],
+#formulario input[type=checkbox] + label{
+    display: inline-block;
+    width: auto;
+}
+
+#formulario input[type=checkbox] + label::before{
+    content: "";
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    border: 2px solid #8bd3dd;
+}
+
+#formulario input[type=checkbox]{
+    position: absolute;
+    left: -99999px;
+}
+
+#formulario input[type=checkbox]:checked + label::before {
+    background-image: url(imagenes/marca-de-verificacion.png);
+    background-repeat: no-repeat;
+    background-size: 20px;
+    background-position: center center;
+}
+
+input[type=text] {
+    width: 130px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    background-image: url('imagenes/lupa.png');
+    background-position: 10px 10px; 
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+    transition: width 0.4s ease-in-out;
+}
+  
+input[type=text]:focus {
+    width: 100%;
+}
+
+
+    
+ 
